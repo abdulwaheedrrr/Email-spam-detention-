@@ -82,6 +82,14 @@ sample = "Congratulations! You have won a $1,000 gift card. Click here to claim 
 print("Sample email prediction:", predict_email(sample))
 
 
+import joblib
+
+# Save the model
+joblib.dump(model, "model.pkl")
+
+# Save the vectorizer
+joblib.dump(vectorizer, "vectorizer.pkl")
+
 
 
 
